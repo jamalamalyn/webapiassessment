@@ -36,7 +36,7 @@ After you completed the exercise, please upload the whole source code, including
   - Contact email address
   - Date became customer
  
-```json
+```csharp
 public class Client
 {
   Guid Id { get; set;}
