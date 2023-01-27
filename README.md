@@ -42,6 +42,6 @@ public class Client
   Guid Id { get; set;}
   string Name { get; set;}
   string EmailAddress { get; set;}
-  DateTime CreateDate ={ get; set;}
+  DateTime CreateDate { get; set;}
 }
 ```
