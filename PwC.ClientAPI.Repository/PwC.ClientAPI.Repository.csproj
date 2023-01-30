@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PwC.ClientAPI.Data\PwC.ClientAPI.Data.csproj" />
+    <ProjectReference Include="..\PwC.ClientAPI.Domain\PwC.ClientAPI.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
