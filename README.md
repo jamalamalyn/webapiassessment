@@ -19,7 +19,7 @@
 
 ## Requirements
 - Use .Net 5 and C#
-- Use Entity Framework 5 to access a database Note: please use this dummy connection string in your code Server=tcp:sqlserver.database.windows.net,1433;Initial Catalog=dummydb;Persist Security Info=False;User ID=sqluser;Password=sqlpassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+- Use Entity Framework 5 to access a database Note: please use this dummy connection string in your code `Server=tcp:sqlserver.database.windows.net,1433;Initial Catalog=dummydb;Persist Security Info=False;User ID=sqluser;Password=sqlpassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;`
 - Include swagger that displays your API design
 - Consider the application will be deployed to Azure
 
