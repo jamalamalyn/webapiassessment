@@ -1,0 +1,10 @@
+PwC.ClientAPI/bin/
+PwC.ClientAPI/obj/
+PwC.ClientAPI.Data/bin/
+PwC.ClientAPI.Data/obj/
+PwC.ClientAPI.Domain/bin/
+PwC.ClientAPI.Domain/obj/
+PwC.ClientAPI.Repository/bin/
+PwC.ClientAPI.Repository/obj/
+PwC.ClientAPI.Test/bin/
+PwC.ClientAPI.Test/obj/
