@@ -50,9 +50,9 @@ namespace PcW.ClientAPI.Test
             var controller = CreateClientController();
 
             List<int> ids = new List<int>()
-        {
-            1,3,4
-        };
+            {
+                1,3,4
+            };
 
             var response = controller.GetClients(ids);
             var resultObject = response.Result as OkObjectResult;
@@ -80,7 +80,7 @@ namespace PcW.ClientAPI.Test
         }
 
         [Fact]
-        public void GetClientTest_IdNotExsits_Failure()
+        public void GetClientTest_IdNotExists_Failure()
         {
             var controller = CreateClientController();
 
@@ -178,20 +178,20 @@ namespace PcW.ClientAPI.Test
             var controller = CreateClientController();
 
             var clients = new List<Client>()
-        {
-            new Client(){
-                Id = 2,
-                Name = "Annette Gilpin"
-            },
-            new Client(){
-                Id = 4,
-                RegisteredDateTime = new DateTime(2020, 8, 30)
-            },
-            new Client(){
-                Id = 3,
-                EmailAddress = "nathan@test.com"
-            }
-        };
+            {
+                new Client(){
+                    Id = 2,
+                    Name = "Annette Gilpin"
+                },
+                new Client(){
+                    Id = 4,
+                    RegisteredDateTime = new DateTime(2020, 8, 30)
+                },
+                new Client(){
+                    Id = 3,
+                    EmailAddress = "nathan@test.com"
+                }
+            };
 
             var response = controller.UpdateClients(clients);
             var resultObject = response as OkResult;
@@ -239,17 +239,17 @@ namespace PcW.ClientAPI.Test
             var controller = CreateClientController();
 
             var clients = new List<Client>()
-        {
-            new Client(){
-                Name = "Annette Gilpin"
-            },
-            new Client(){
-                RegisteredDateTime = new DateTime(2020, 8, 30)
-            },
-            new Client(){
-                EmailAddress = "nathan@test.com"
-            }
-        };
+            {
+                new Client(){
+                    Name = "Annette Gilpin"
+                },
+                new Client(){
+                    RegisteredDateTime = new DateTime(2020, 8, 30)
+                },
+                new Client(){
+                    EmailAddress = "nathan@test.com"
+                }
+            };
 
             var response = controller.UpdateClients(clients);
             var resultObject = response as BadRequestResult;
@@ -371,32 +371,32 @@ namespace PcW.ClientAPI.Test
         private void PopulateClients(DataContext context)
         {
             List<Client> clients = new List<Client>()
-        {
-            new Client()
             {
-                Name = "Brendan Lynch",
-                EmailAddress = "test1@test.com",
-                RegisteredDateTime = new DateTime(2020, 8, 2)
-            },
-            new Client()
-            {
-                Name = "Annette Lynch",
-                EmailAddress = "test2@test.com",
-                RegisteredDateTime = new DateTime(2020, 8, 6)
-            },
-            new Client()
-            {
-                Name = "Nathan Clay",
-                EmailAddress = "test3@test.com",
-                RegisteredDateTime = new DateTime(2020, 8, 6)
-            },
-            new Client()
-            {
-                Name = "Bob Lynch",
-                EmailAddress = "test4@test.com",
-                RegisteredDateTime = new DateTime(2020, 8, 20)
-            },
-        };
+                new Client()
+                {
+                    Name = "Brendan Lynch",
+                    EmailAddress = "test1@test.com",
+                    RegisteredDateTime = new DateTime(2020, 8, 2)
+                },
+                new Client()
+                {
+                    Name = "Annette Lynch",
+                    EmailAddress = "test2@test.com",
+                    RegisteredDateTime = new DateTime(2020, 8, 6)
+                },
+                new Client()
+                {
+                    Name = "Nathan Clay",
+                    EmailAddress = "test3@test.com",
+                    RegisteredDateTime = new DateTime(2020, 8, 6)
+                },
+                new Client()
+                {
+                    Name = "Bob Lynch",
+                    EmailAddress = "test4@test.com",
+                    RegisteredDateTime = new DateTime(2020, 8, 20)
+                },
+            };
 
             context.Clients.AddRange(clients);
             context.SaveChanges();
